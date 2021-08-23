@@ -13,7 +13,7 @@ hooks:
     #      timeout: 300
     #      runas: abdelali
     AfterInstall:
-       - location: scripts/copy-files.sh
+       - location: scripts/stop-containers.sh
          timeout: 300
          runas: root
     ApplicationStart:

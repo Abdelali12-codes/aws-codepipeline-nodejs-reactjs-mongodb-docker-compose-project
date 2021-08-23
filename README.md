@@ -24,3 +24,16 @@ wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
 ```
+
+# create ebs volume and attach it to your ec2 (the ebs volume and the ec2 must be in the same AZ)
+
+- run these commands to your ec2 instance that you have attached the ebs volume to
+
+```
+lsblk
+sudo file -s /dev/xvdf
+sudo mkfs -t xfs /dev/xvdf
+sudo mkdir /mongodbvolume
+sudo mount /dev/xvdf /mongodbvolume
+
+```
