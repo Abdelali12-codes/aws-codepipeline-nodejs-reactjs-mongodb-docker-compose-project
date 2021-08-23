@@ -1,8 +1,8 @@
 version: 0.0
-os: ubuntu
+os: linux
 files:
   - source: /
-    destination: /home/ubuntu/devopspipeline
+    destination: /home/ec2-user/devopspipeline
 # hooks:
 #   BeforeInstall:
 #     - location: scripts/UnzipResourceBundle.sh
