@@ -8,8 +8,6 @@ services:
     ports:
       - 80:80
     restart: always
-    links:
-      - react_app
 
   # react_app:
   #   container_name: react_app
