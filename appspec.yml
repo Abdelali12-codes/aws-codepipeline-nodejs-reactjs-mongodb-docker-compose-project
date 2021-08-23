@@ -2,8 +2,27 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/devopspipeline
-# hooks:
+    destination: /home/abdelali/devopspipeline
+hooks:
+    ApplicationStop:
+       - location: scripts/stop-container.sh
+         timeout: 300
+         runas: abdelali
+    BeforeInstall:
+       - location: scripts/copy-files.sh
+         timeout: 300
+         runas: root
+    AfterInstall:
+       - location: scripts/build-images.sh
+         timeout: 300
+         runas: abdelali
+    ApplicationStart:
+       - location: scripts/run-container.sh
+         timeout: 300
+         runas: abdelali
+
+    
+       
 #   BeforeInstall:
 #     - location: scripts/UnzipResourceBundle.sh
 #   AfterInstall:
