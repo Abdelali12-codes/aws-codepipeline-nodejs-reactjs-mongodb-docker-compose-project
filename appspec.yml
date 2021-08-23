@@ -4,22 +4,22 @@ files:
   - source: /
     destination: /home/abdelali/devopspipeline
 hooks:
-    ApplicationStop:
+    # ApplicationStop:
+    #    - location: scripts/stop-container.sh
+    #      timeout: 300
+    #      runas: abdelali
+    BeforeInstall:
        - location: scripts/stop-container.sh
          timeout: 300
          runas: abdelali
-    BeforeInstall:
+    AfterInstall:
        - location: scripts/copy-files.sh
          timeout: 300
          runas: root
-    AfterInstall:
-       - location: scripts/build-images.sh
-         timeout: 300
-         runas: abdelali
-    ApplicationStart:
-       - location: scripts/run-container.sh
-         timeout: 300
-         runas: abdelali
+    # ApplicationStart:
+    #    - location: scripts/run-container.sh
+    #      timeout: 300
+    #      runas: abdelali
 
     
        
