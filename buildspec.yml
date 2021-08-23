@@ -19,10 +19,11 @@ phases:
 
 artifacts:
    files:
-     - build/*
+     - build/**/*
      - appspec.yml
      - server/**/*
      - nginx/*
+     - scripts/*
      - docker-compose.yml
 
       
