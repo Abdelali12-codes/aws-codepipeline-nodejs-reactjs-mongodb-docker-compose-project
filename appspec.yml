@@ -8,14 +8,14 @@ hooks:
     #    - location: scripts/stop-container.sh
     #      timeout: 300
     #      runas: abdelali
-    BeforeInstall:
-       - location: scripts/stop-container.sh
-         timeout: 300
-         runas: abdelali
-    AfterInstall:
-       - location: scripts/copy-files.sh
-         timeout: 300
-         runas: root
+    # BeforeInstall:
+    #    - location: scripts/stop-container.sh
+    #      timeout: 300
+    #      runas: abdelali
+    # AfterInstall:
+    #    - location: scripts/copy-files.sh
+    #      timeout: 300
+    #      runas: root
     # ApplicationStart:
     #    - location: scripts/run-container.sh
     #      timeout: 300
