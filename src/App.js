@@ -40,7 +40,7 @@ class App extends PureComponent {
         </Content>
         <Footer style={{ textAlign: 'center' }}>
           {/* React Node Starter */}
-          Abdelali Jadelmoula Devops (CI/CD)
+          Abdelali Jadelmoula Devops (CI/CD) OOOOOOOOO
         </Footer>
       </Layout>
     )
