@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/devopspipeline
+# hooks:
+#   BeforeInstall:
+#     - location: scripts/UnzipResourceBundle.sh
+#   AfterInstall:
+#     - location: scripts/RunResourceTests.sh
+#       timeout: 300
+#   ApplicationStart:
+#     - location: scripts/RunFunctionalTests.sh
+#       timeout: 300
+#       runas: root
+#   ValidateService:
+#     - location: scripts/MonitorService.sh
+#       timeout: 300
+#       runas: ubuntu
