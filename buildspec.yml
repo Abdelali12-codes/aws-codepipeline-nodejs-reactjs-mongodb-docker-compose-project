@@ -21,7 +21,7 @@ artifacts:
    files:
      - build/**/*
      - appspec.yml
-     - server/**/*
+     - nodeserver/**/*
      - nginx/*
      - scripts/*
      - docker-compose.yml
