@@ -16,10 +16,10 @@ hooks:
        - location: scripts/copy-files.sh
          timeout: 300
          runas: root
-    # ApplicationStart:
-    #    - location: scripts/run-container.sh
-    #      timeout: 300
-    #      runas: abdelali
+    ApplicationStart:
+       - location: scripts/start-containers.sh
+         timeout: 300
+         runas: abdelali
 
     
        
