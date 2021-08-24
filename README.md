@@ -14,12 +14,27 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+# create an user
+
+```
+sudo su
+useradd abdelali
+passwd abdelali
+```
+
+- enter your password
+
+```
+echo "abdelali ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+su - abdelali
+```
+
 # install codedeploy agent
 
 ```
-sudo apt-get install ruby -y
-sudo apt-get install wget -y
-cd /home/ubuntu
+sudo yum install ruby -y
+sudo yum install wget -y
+cd /home/abdelali
 wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
