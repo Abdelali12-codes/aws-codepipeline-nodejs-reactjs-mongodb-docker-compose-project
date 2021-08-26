@@ -52,3 +52,7 @@ sudo mkdir /mongodbvolume
 sudo mount /dev/xvdf /mongodbvolume
 
 ```
+
+# the lab architecture
+![arch](https://user-images.githubusercontent.com/67081878/131049802-1e1ed47b-8d85-4236-b384-8a47db28b538.png)
+
